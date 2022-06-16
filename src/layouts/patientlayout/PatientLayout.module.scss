@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  height: 48px;
+  background-color: #D8DCDD;
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #03586B;
+
+    &:global(.active) {
+      text-decoration: underline;
+    }
+  }
+}

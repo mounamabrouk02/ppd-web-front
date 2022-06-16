@@ -1,0 +1,78 @@
+.outerContainer {
+  width: 100%;
+  padding: 5px;
+}
+
+.container {
+}
+
+.header {
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  background-color: #9f9a9a;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  border: 1px solid #03586b;
+
+  &:global(.past) {
+    background-color: #e5b3b3;
+  }
+}
+
+.time {
+  display: flex;
+  align-items: center;
+
+  > span {
+    margin-left: 10px;
+  }
+}
+
+.body {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f0f2f2;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+
+  > img {
+    border-radius: 50%;
+    width: 100%;
+    object-fit: contain;
+    // border: 3px solid #03586b;
+    box-shadow: 0 0 10px #03586b4a;
+  }
+}
+
+.doctorInfo {
+  margin-left: 15px;
+
+  > :global(.doc-title) {
+    font-size: 22px;
+    font-weight: bold;
+    color: #03586B;
+  }
+
+  > :global(.doc-speciality) {
+    font-size: 16px;
+  }
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #81b6c1;
+  border: 1px solid #03586B;
+  cursor: pointer;
+  color: white;
+  border-radius: 0 0 5px 5px;
+  &:global(.can-delete) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
