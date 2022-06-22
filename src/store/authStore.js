@@ -6,8 +6,7 @@ const authState = atom({
     isAuthenticated: false,
     user: null,
     token: null,
-    error: null,
-    loading: false,
+    fullName:""
   },
 });
 

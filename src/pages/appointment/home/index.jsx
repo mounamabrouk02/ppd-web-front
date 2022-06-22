@@ -3,9 +3,10 @@ import {Link} from "react-router-dom";
 import {CalendarStats} from "tabler-icons-react";
 import PatientLayout from "../../../layouts/patientlayout/PatientLayout";
 import AppLayout from "../../../layouts/applayout/AppLayout";
+import {useState} from "react";
 
 function AppointmentHome() {
-
+    const [opened, setOpened] = useState(false);
     return (
         <PatientLayout>
             <AppLayout title={"Rendez-vous"}>

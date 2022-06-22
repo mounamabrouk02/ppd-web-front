@@ -32,7 +32,6 @@ function Index() {
             }
         }))
     }
-
     return <div className={styles.container}>
         <h2 onClick={() => goto("/")} className={styles.logo}>
             <img src={logo} alt="logo"/>
@@ -40,8 +39,8 @@ function Index() {
         <div className="auth">
             {
                 !auth.isAuthenticated ? <>
-                    <Button onClick={() => testLogin()} variant="subtle" color={"cyan"} radius={0}>(Temp : Tester la
-                        connexion)</Button>
+                    {/*<Button onClick={() => testLogin()} variant="subtle" color={"cyan"} radius={0}>(Temp : Tester la*/}
+                    {/*    connexion)</Button>*/}
                     <Button onClick={() => goto("/login")} variant="subtle" color={"cyan"} radius={0}>Professionnel de
                         santé?</Button>
                     <Button onClick={() => goto("/login")} variant="subtle" color={"cyan"} radius={0}>Se
@@ -57,7 +56,7 @@ function Index() {
                         rightIcon={<UserCircle size={16}/>}
                         variant="subtle" color={"cyan"} radius={0}>Mon compte</Button>}
                     >
-                        <Menu.Label>{auth?.user?.fullName}</Menu.Label>
+                        <Menu.Label>{auth?.fullName}</Menu.Label>
 
                         <Menu.Item icon={<User size={16}/>}>Profile</Menu.Item>
                         <Menu.Item onClick={logout} icon={<Logout size={16} />}>Se déconnecter</Menu.Item>
